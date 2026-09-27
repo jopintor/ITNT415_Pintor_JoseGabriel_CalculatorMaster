@@ -20,5 +20,4 @@ was developed on its own feature branch and merged into main via pull requests.
 - Division-by-zero handling
 - Continuous execution until exit
 
-## Sample Execution
-![Sample run](screenshots/sample-run.png)
+
