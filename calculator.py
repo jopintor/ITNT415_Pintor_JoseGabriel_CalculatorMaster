@@ -12,6 +12,10 @@ def add(x, y):
     return x + y
 
 
+def subtract(x, y):
+    return x - y
+
+
 def main():
     while True:
         print("\n=== Calculator Master ===")
@@ -31,7 +35,10 @@ def main():
             result = add(x, y)
             print(f"Result: {result:.2f}")
         elif choice == 's':
-            print("Subtraction feature not yet implemented.")
+            x = get_number("Enter first number: ")
+            y = get_number("Enter second number: ")
+            result = subtract(x, y)
+            print(f"Result: {result:.2f}")
         elif choice == 'm':
             print("Multiplication feature not yet implemented.")
         elif choice == 'd':
