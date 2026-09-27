@@ -21,6 +21,14 @@ def multiply(x, y):
     return x * y
 
 
+def divide(x, y):
+    """Return x divided by y, guarding against division by zero."""
+    if y == 0:
+        print("Error: Division by zero is not allowed.")
+        return None
+    return x / y
+
+
 def main():
     while True:
         print("\n=== Calculator Master ===")
@@ -53,7 +61,11 @@ def main():
             result = multiply(x, y)
             print(f"Result: {result:.2f}")
         elif choice == 'd':
-            print("Division feature not yet implemented.")
+            x = get_number("Enter numerator: ")
+            y = get_number("Enter denominator: ")
+            result = divide(x, y)
+            if result is not None:
+                print(f"Result: {result:.2f}")
         else:
             print("Invalid option. Please try again.")
 
