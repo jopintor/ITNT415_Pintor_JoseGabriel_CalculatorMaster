@@ -16,6 +16,11 @@ def subtract(x, y):
     return x - y
 
 
+def multiply(x, y):
+    """Return the product of x and y."""
+    return x * y
+
+
 def main():
     while True:
         print("\n=== Calculator Master ===")
@@ -43,7 +48,10 @@ def main():
             else:
                 print(f"Result: {result:.2f}")
         elif choice == 'm':
-            print("Multiplication feature not yet implemented.")
+            x = get_number("Enter first number: ")
+            y = get_number("Enter second number: ")
+            result = multiply(x, y)
+            print(f"Result: {result:.2f}")
         elif choice == 'd':
             print("Division feature not yet implemented.")
         else:
