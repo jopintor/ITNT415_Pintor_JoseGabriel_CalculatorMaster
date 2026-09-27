@@ -38,7 +38,10 @@ def main():
             x = get_number("Enter first number: ")
             y = get_number("Enter second number: ")
             result = subtract(x, y)
-            print(f"Result: {result:.2f}")
+            if result < 0:
+                print(f"Result: {result:.2f} (negative)")
+            else:
+                print(f"Result: {result:.2f}")
         elif choice == 'm':
             print("Multiplication feature not yet implemented.")
         elif choice == 'd':
