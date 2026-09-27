@@ -8,6 +8,10 @@ def get_number(prompt):
             print("Invalid input. Please enter a numeric value.")
 
 
+def add(x, y):
+    return x + y
+
+
 def main():
     while True:
         print("\n=== Calculator Master ===")
@@ -22,7 +26,10 @@ def main():
             print("Goodbye!")
             break
         elif choice == 'a':
-            print("Addition feature not yet implemented.")
+            x = get_number("Enter first number: ")
+            y = get_number("Enter second number: ")
+            result = add(x, y)
+            print(f"Result: {result:.2f}")
         elif choice == 's':
             print("Subtraction feature not yet implemented.")
         elif choice == 'm':
@@ -35,4 +42,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
